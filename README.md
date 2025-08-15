@@ -1,126 +1,163 @@
----
-layout: markdown_page
-title: Handbook
-twitter_image: '/images/tweets/handbook'
----
+# eKYC News Crawler
 
-The GitLab team handbook is the central repository for how we run the company. Printed it consists of over [1,000 pages of text](https://github.com/daijapan/test/tree/master/tools-and-tips/#count-handbook-pages). As part of our value of being transparent the handbook is <a href="https://gitlab.com/gitlab-com/www-gitlab-com/tree/master/source/handbook">open to the world</a>, and we welcome feedback<a name="feedback"></a>. Please make a <a href="https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests">merge request</a> to suggest improvements or add clarifications.
-Please use <a href="https://gitlab.com/gitlab-com/www-gitlab-com/issues">issues</a> to ask questions.
+An automated RSS feed crawler and aggregator for monitoring developments in eKYC (electronic Know Your Customer) and digital identity verification across multiple academic and industry disciplines.
 
-* [General](https://github.com/daijapan/test/tree/master/index.html.md)
-  * [Values](https://github.com/daijapan/test/tree/master/values/index.html.md)
-  * [General Guidelines](https://github.com/daijapan/test/tree/master/general-guidelines/index.html.md)
-  * [Handbook Usage](https://github.com/daijapan/test/tree/master/handbook/index.html.md)
-  * [Communication](https://github.com/daijapan/test/tree/master/communication/index.html.md)
-  * [Security](https://github.com/daijapan/test/tree/master/security/index.html.md)
-  * [Anti-Harassment Policy](https://github.com/daijapan/test/tree/master/anti-harassment/index.html.md)
-  * [Signing legal documents](https://github.com/daijapan/test/tree/master/signing-legal-documents/index.html.md)
-  * [Tools and tips](https://github.com/daijapan/test/tree/master/tools-and-tips/index.html.md)
-  * [Leadership](https://github.com/daijapan/test/tree/master/leadership/index.html.md)
-  * [Using Git to update this website](https://github.com/daijapan/test/tree/master/git-page-update/index.html.md)
-* [People Operations](https://github.com/daijapan/test/tree/master/people-operations/index.html.md)
-  * [Benefits](https://github.com/daijapan/test/tree/master/benefits/index.html.md)
-  * [Code of Conduct](https://github.com/daijapan/test/tree/master/people-operations/code-of-conduct/index.html.md)
-  * [Spending Company Money](https://github.com/daijapan/test/tree/master/spending-company-money/index.html.md)
-  * [Travel](https://github.com/daijapan/test/tree/master/travel/index.html.md)
-  * [Paid time off](https://github.com/daijapan/test/tree/master/paid-time-off/index.html.md)
-  * [Incentives](https://github.com/daijapan/test/tree/master/incentives/index.html.md)
-  * [Onboarding](https://github.com/daijapan/test/tree/master/general-onboarding/index.html.md)
-  * [Hiring](https://github.com/daijapan/test/tree/master/hiring/index.html.md)
-  * [Offboarding](https://github.com/daijapan/test/tree/master/offboarding/index.html.md)
-  * [Visas](https://github.com/daijapan/test/tree/master/people-operations/visas/index.html.md)
-  * [Secret Snowflake](https://github.com/daijapan/test/tree/master/people-operations/secret-snowflake/index.html.md)
-* [Engineering Function](https://github.com/daijapan/test/tree/master/engineering/index.html.md)
-  * [Dev Backend Department](https://github.com/daijapan/test/tree/master/engineering/dev-backend/index.html.md)
-    * [Create Team](https://github.com/daijapan/test/tree/master/engineering/dev-backend/create/index.html.md)
-    * [Distribution Team](https://github.com/daijapan/test/tree/master/engineering/dev-backend/distribution/index.html.md)
-    * [Geo Team](https://github.com/daijapan/test/tree/master/engineering/dev-backend/geo/index.html.md)
-    * [Gitaly Team](https://github.com/daijapan/test/tree/master/engineering/dev-backend/gitaly/index.html.md)
-    * [Gitter Team](https://github.com/daijapan/test/tree/master/engineering/dev-backend/gitter/index.html.md)
-    * [Manage Team](https://github.com/daijapan/test/tree/master/engineering/dev-backend/manage/index.html.md)
-    * [Plan Team](https://github.com/daijapan/test/tree/master/engineering/dev-backend/plan/index.html.md)
-  * [Frontend Department](https://github.com/daijapan/test/tree/master/engineering/frontend/index.html.md)
-  * [Infrastructure Department](https://github.com/daijapan/test/tree/master/engineering/infrastructure/index.html.md)
-    * [Database Team](https://github.com/daijapan/test/tree/master/engineering/infrastructure/database/index.html.md)
-    * [Production Team](https://github.com/daijapan/test/tree/master/engineering/infrastructure/production/index.html.md)
-  * [Ops Backend Department](https://github.com/daijapan/test/tree/master/engineering/ops-backend/index.html.md)
-    * [CI/CD Team](https://github.com/daijapan/test/tree/master/engineering/ops-backend/ci-cd/index.html.md)
-    * [Configure Team](https://github.com/daijapan/test/tree/master/engineering/ops-backend/configure/index.html.md)
-    * [Monitoring Team](https://github.com/daijapan/test/tree/master/engineering/ops-backend/monitoring/index.html.md)
-    * [Secure Team](https://github.com/daijapan/test/tree/master/engineering/ops-backend/secure/index.html.md)
-  * [Quality Department](https://github.com/daijapan/test/tree/master/engineering/quality/index.html.md)
-  * [Security Department](https://github.com/daijapan/test/tree/master/engineering/security/index.html.md)
-  * [Support Department](https://github.com/daijapan/test/tree/master/support/index.html.md)
-  * [UX Department](https://github.com/daijapan/test/tree/master/engineering/ux/index.html.md)
-* [Marketing](https://github.com/daijapan/test/tree/master/marketing/index.html.md)
-  * [Website](https://github.com/daijapan/test/tree/master/marketing/website/index.html.md)
-  * [Blog](https://github.com/daijapan/test/tree/master/marketing/blog/index.html.md)
-  * [Social Media Guidelines](https://github.com/daijapan/test/tree/master/marketing/social-media-guidelines/index.html.md)
-  * [Marketing and Sales Development](https://github.com/daijapan/test/tree/master/marketing/marketing-sales-development/index.html.md)
-    * [Sales Development](https://github.com/daijapan/test/tree/master/marketing/marketing-sales-development/sdr/index.html.md)
-    * [Field Marketing](https://github.com/daijapan/test/tree/master/marketing/marketing-sales-development/field-marketing/index.html.md)
-    * [Marketing Operations](https://github.com/daijapan/test/tree/master/marketing/marketing-sales-development/marketing-operations/index.html.md)
-    * [Marketing Programs](https://github.com/daijapan/test/tree/master/marketing/marketing-sales-development/marketing-programs/index.html.md)
-    * [Online Marketing](https://github.com/daijapan/test/tree/master/marketing/marketing-sales-development/online-marketing/index.html.md)
-  * [Corporate Marketing](https://github.com/daijapan/test/tree/master/marketing/corporate-marketing/index.html.md)
-      * [Content Marketing](https://github.com/daijapan/test/tree/master/marketing/corporate-marketing/content/index.html.md)
-  * [Community Relations](https://github.com/daijapan/test/tree/master/marketing/community-relations/index.html.md)
-  * [Product Marketing](https://github.com/daijapan/test/tree/master/marketing/product-marketing/index.html.md)
-    * [Demos](https://github.com/daijapan/test/tree/master/marketing/product-marketing/demo/index.html.md)
-  * [Marketing Career Development](https://github.com/daijapan/test/tree/master/marketing/career-development/index.html.md)
-* [Sales](https://github.com/daijapan/test/tree/master/sales/index.html.md)
-  * [Account Management](https://github.com/daijapan/test/tree/master/account-management/index.html.md)
-  * [Customer Success](https://github.com/daijapan/test/tree/master/customer-success/index.html.md)
-  * [Reseller Channels](https://github.com/daijapan/test/tree/master/resellers/index.html.md)
-  * Sales Operations - moved to [Business Operations](https://github.com/daijapan/test/tree/master/business-ops/index.html.md)
-  * [Reporting](https://github.com/daijapan/test/tree/master/business-ops/reporting/index.html.md)
-* [Finance](https://github.com/daijapan/test/tree/master/finance/index.html.md)
-  * [Stock Options](https://github.com/daijapan/test/tree/master/stock-options/index.html.md)
-  * [Board meetings](https://github.com/daijapan/test/tree/master/board-meetings/index.html.md)
-  * [Business Operations](https://github.com/daijapan/test/tree/master/business-ops/index.html.md)
-* [Product](https://github.com/daijapan/test/tree/master/product/index.html.md)
-  * [Release posts](https://github.com/daijapan/test/tree/master/marketing/blog/release-posts/index.html.md)
-  * [Live streaming](https://github.com/daijapan/test/tree/master/product/live-streaming/index.html.md)
-  * [Making Gifs](https://github.com/daijapan/test/tree/master/product/making-gifs/index.html.md)
-  * [Data analysis](https://github.com/daijapan/test/tree/master/product/data-analysis/index.html.md)
-  * [Technical Writing](https://github.com/daijapan/test/tree/master/product/technical-writing/index.html.md)
-  * [Markdown Guide](https://github.com/daijapan/test/tree/master/product/technical-writing/markdown-guide/index.html.md)
-* [Legal](https://github.com/daijapan/test/tree/master/legal/index.html.md)
-  * [DMCA](https://github.com/daijapan/test/tree/master/dmca/index.html.md)
-* [Alliances](https://github.com/daijapan/test/tree/master/alliances/index.html.md)
+## Features
 
-<style>
-.md-page h2 i.icon-color {
-  color: rgb(107,79,187/index.html.md)
+- **Multi-source RSS crawling**: Monitors academic, regulatory, industry, and cybersecurity feeds
+- **Intelligent relevance scoring**: Filters articles based on eKYC/digital identity keywords
+- **Multiple output formats**: JSON, CSV, and HTML reports
+- **Automated scheduling**: Daily crawls at configurable times
+- **Comprehensive coverage**: Covers computer science, law, finance, cybersecurity, and more
+- **Recent article filtering**: Focus on articles from the last N days
+
+## Installation
+
+1. Install Python dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Command Line Interface
+
+#### Run a single crawl:
+```bash
+python cli.py crawl
+```
+
+#### Run crawl with custom parameters:
+```bash
+python cli.py crawl --days 14 --output-dir my_reports
+```
+
+#### Start automated scheduler:
+```bash
+python cli.py schedule
+```
+
+#### Test with subset of feeds:
+```bash
+python cli.py test
+```
+
+#### List all configured feeds:
+```bash
+python cli.py list-feeds
+```
+
+### Direct Python Usage
+
+```python
+from crawler import EKYCNewsCrawler
+
+crawler = EKYCNewsCrawler()
+results = crawler.run_crawl(days_filter=7)
+
+print(f"Found {results['relevant_articles']} relevant articles")
+```
+
+## Configuration
+
+Edit `config.py` to customize:
+
+- **RSS_FEEDS**: Add/remove RSS feed sources
+- **KEYWORDS**: Modify relevance scoring keywords
+- **MAX_ARTICLES_PER_FEED**: Limit articles per feed
+- **OUTPUT_DIR**: Change output directory
+
+## Feed Categories
+
+The crawler monitors feeds across these categories:
+
+### Academic
+- arXiv Computer Science, Cryptography, Machine Learning
+- Academic papers on digital identity research
+
+### RegTech (Regulatory Technology)
+- A Team Insight RegTech
+- Fintech News Switzerland RegTech
+- RegtechTimes
+- The Fintech Times RegTech
+- TechBullion RegTech
+- TheFinanser Regulation
+- Encompass RegTech Blog
+
+### Industry
+- Risk.net Regulation
+- Finextra Risk
+- Biometric Update
+- Identity Week
+
+### Cybersecurity
+- NIST Cybersecurity
+- Dark Reading Identity
+- Security Week Identity
+
+## Output Files
+
+Each crawl generates three files:
+
+1. **JSON** (`ekyc_news_YYYYMMDD_HHMMSS.json`): Raw structured data
+2. **CSV** (`ekyc_news_YYYYMMDD_HHMMSS.csv`): Spreadsheet format
+3. **HTML** (`ekyc_news_YYYYMMDD_HHMMSS.html`): Formatted report with relevance scoring
+
+## Relevance Scoring
+
+Articles are scored based on keyword matching:
+- **Title matches**: 3 points per keyword
+- **Summary matches**: 1 point per keyword
+
+Keywords include: ekyc, digital identity, biometric, kyc, aml, verification, compliance, regtech, blockchain identity, etc.
+
+## Scheduling
+
+The scheduler runs crawls twice daily:
+- 9:00 AM
+- 5:00 PM
+
+Modify `scheduler.py` to change timing.
+
+## Customization
+
+### Adding New RSS Feeds
+
+Edit `config.py`:
+
+```python
+RSS_FEEDS = {
+    "Your Category": {
+        "Source Name": "https://example.com/feed.xml",
+    }
 }
-.md-page h2:nth-of-type(even) i.icon-color{
-  color:rgb(252,109,38/index.html.md);
-}
-.font-awesome {
-  font-size: .70em;
-  vertical-align: middle;
-  padding-bottom: 5px;
-}
-ul.toc-list-icons {
-  list-style-type: none;
-  padding-left: 25px;
-}
-ul.toc-list-icons li ul {
-  padding-left: 25px;
-}
-ul.toc-list-icons {
-  list-style-type: none;
-  padding-left: 25px;
-}
-ul.toc-list-icons li ul {
-  padding-left: 35px;
-}
-ul.toc-list-icons li i,
-ul.toc-list-icons li ul li i {
-  padding-right: 15px;
-  color: rgb(107,79,187/index.html.md);
-}
-ul.toc-list-icons li:nth-of-type(even) i {
-  color:rgb(252,109,38/index.html.md);
-}
-</style>
+```
+
+### Adding Keywords
+
+Edit `config.py`:
+
+```python
+KEYWORDS = [
+    "your-keyword",
+    "another-keyword",
+    # ... existing keywords
+]
+```
+
+## Error Handling
+
+- Graceful handling of unavailable feeds
+- Timeout protection for slow feeds
+- Logging of all operations
+- Continues processing even if individual feeds fail
+
+## Requirements
+
+- Python 3.7+
+- Internet connection
+- Dependencies listed in `requirements.txt`
+
+## License
+
+For internal use only.
