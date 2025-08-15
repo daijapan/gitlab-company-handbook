@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}RSS Feeds - eKYC News Crawler{% endblock %}
+
+{% block content %}
+<h2>Configured RSS Feeds</h2>
+
+{% for category, category_feeds in feeds.items() %}
+<div style="margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
+    <h3 style="color: #2c3e50; margin-top: 0;">{{ category }}</h3>
+    <ul style="list-style-type: none; padding: 0;">
+        {% for name, url in category_feeds.items() %}
+        <li style="margin: 10px 0; padding: 10px; background-color: #f8f9fa; border-radius: 3px;">
+            <strong>{{ name }}</strong><br>
+            <a href="{{ url }}" target="_blank" style="color: #3498db; word-break: break-all;">{{ url }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+{% endblock %}

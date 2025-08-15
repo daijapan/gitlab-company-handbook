@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Reports - eKYC News Crawler{% endblock %}
+
+{% block content %}
+<h2>Available Reports</h2>
+
+{% if reports %}
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+    <thead>
+        <tr style="background-color: #f8f9fa;">
+            <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Date & Time</th>
+            <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for report in reports %}
+        <tr>
+            <td style="padding: 12px; border: 1px solid #ddd;">{{ report.datetime }}</td>
+            <td style="padding: 12px; border: 1px solid #ddd;">
+                {% if report.html %}
+                <a href="/view/{{ report.html }}" class="btn" target="_blank">View HTML</a>
+                <a href="/download/{{ report.html }}" class="btn">Download HTML</a>
+                {% endif %}
+                {% if report.json %}
+                <a href="/download/{{ report.json }}" class="btn">Download JSON</a>
+                {% endif %}
+                {% if report.csv %}
+                <a href="/download/{{ report.csv }}" class="btn">Download CSV</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No reports available yet. <a href="/">Run a crawl</a> to generate reports.</p>
+{% endif %}
+{% endblock %}

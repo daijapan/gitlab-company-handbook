@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="crawl-status"></div>
+
+<div style="margin: 20px 0;">
+    <h2>Start New Crawl</h2>
+    <form id="crawl-form" onsubmit="startCrawl(event)">
+        <div class="form-group">
+            <label for="days">Days to look back:</label>
+            <input type="number" id="days" name="days" value="7" min="1" max="365">
+        </div>
+        <button type="submit" class="btn btn-success">Start Crawl</button>
+    </form>
+</div>
+
+{% if report_content %}
+<div style="margin: 20px 0;">
+    <h2>Latest Report</h2>
+    <div style="border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+        {{ report_content|safe }}
+    </div>
+</div>
+{% else %}
+<div style="margin: 20px 0;">
+    <h2>No Reports Available</h2>
+    <p>Run your first crawl to generate reports.</p>
+</div>
+{% endif %}
+
+<script>
+function startCrawl(event) {
+    event.preventDefault();
+    const days = document.getElementById('days').value;
+    
+    fetch('/crawl', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({days: parseInt(days)})
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            alert('Error: ' + data.error);
+        } else {
+            alert('Crawl started! Check status above.');
+        }
+    })
+    .catch(error => {
+        alert('Error starting crawl: ' + error);
+    });
+}
+</script>
+{% endblock %}
